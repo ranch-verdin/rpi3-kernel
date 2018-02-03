@@ -1,0 +1,12 @@
+branches:
+  only:
+    - master
+
+sudo: required
+os: linux
+services: docker
+language: generic
+script: ./build-kernel.sh
+
+after_success:
+  - ls -ahl build/
