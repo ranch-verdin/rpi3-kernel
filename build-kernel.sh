@@ -14,5 +14,5 @@ docker run --rm -ti \
   -v "${PWD}/monome-snd":/workdir/monome-snd \
   -v "${PWD}/ssd1332":/workdir/ssd1332 \
   -e DEFCONFIG_PATH=/workdir/bcm2709stripped_defconfig \
-  -e "PATCH_DIRS=/workdir/rt-patches /workdir/patches /workdir/monome-snd /workdir/ssd1332" \
+  -e "PATCH_DIRS=/workdir/rt-patches /workdir/monome-snd /workdir/ssd1332 /workdir/patches" \
   simonvanderveldt/rpi3-kernel-builder
